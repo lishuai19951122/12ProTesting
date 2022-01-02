@@ -1,0 +1,68 @@
+{
+  "uid" : "b94c7c473b0aeb6c",
+  "name" : "test_eval_01[1+2-3]",
+  "fullName" : "test_mark_parametrize#test_eval_01",
+  "historyId" : "875d88c094905f66065eb0a2786cee16",
+  "time" : {
+    "start" : 1640349963154,
+    "stop" : 1640349963155,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_mark_parametrize"
+  }, {
+    "name" : "host",
+    "value" : "lishuaideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "7826-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_mark_parametrize"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "3"
+  }, {
+    "name" : "input",
+    "value" : "'1+2'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b732183d2d369613",
+      "status" : "passed",
+      "time" : {
+        "start" : 1640349880530,
+        "stop" : 1640349880531,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b94c7c473b0aeb6c.json",
+  "parameterValues" : [ "3", "'1+2'" ]
+}

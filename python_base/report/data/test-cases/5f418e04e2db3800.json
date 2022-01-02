@@ -1,0 +1,75 @@
+{
+  "uid" : "5f418e04e2db3800",
+  "name" : "test_eval[3+7-9]",
+  "fullName" : "test_mark_parametrize#test_eval",
+  "historyId" : "f834405e13acb8935d33e1fe5c33772a",
+  "time" : {
+    "start" : 1640349963115,
+    "stop" : 1640349963115,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 10 == 9\n +  where 10 = eval('3+7')",
+  "statusTrace" : "input = '3+7', expected = 9\n\n    @pytest.mark.parametrize(\"input,expected\", [('1+2', 3), ('2+5', 7), ('3+7', 9)])\n    def test_eval(input, expected):\n        # eval 将字符串str当成有效的表达式来值，并返回相应的结果\n>       assert eval(input) == expected\nE       AssertionError: assert 10 == 9\nE        +  where 10 = eval('3+7')\n\ntest_mark_parametrize.py:10: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_mark_parametrize"
+  }, {
+    "name" : "host",
+    "value" : "lishuaideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "7826-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_mark_parametrize"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "9"
+  }, {
+    "name" : "input",
+    "value" : "'3+7'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1350b839e827fdd0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 10 == 9\n +  where 10 = eval('3+7')",
+      "time" : {
+        "start" : 1640349880492,
+        "stop" : 1640349880492,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5f418e04e2db3800.json",
+  "parameterValues" : [ "9", "'3+7'" ]
+}

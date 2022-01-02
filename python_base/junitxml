@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.053" timestamp="2021-12-23T23:39:34.949664" hostname="lishuaideMacBook-Pro.local"><testcase classname="test_mark_selfdefine" name="test_search_01" time="0.000"><failure message="NameError">@pytest.mark.search
+    def test_search_01():
+        print('search_01')
+&gt;       raise NameError
+E       NameError
+
+test_mark_selfdefine.py:7: NameError</failure></testcase><testcase classname="test_mark_selfdefine" name="test_search_02" time="0.001" /><testcase classname="test_mark_selfdefine" name="test_search_03" time="0.000" /><testcase classname="test_mark_selfdefine" name="test_login_01" time="0.000" /><testcase classname="test_mark_selfdefine" name="test_login_02" time="0.000" /></testsuite></testsuites>
