@@ -4,7 +4,7 @@ from openpyxl.utils import get_column_letter
 
 wb = Workbook()
 
-dest_filename = 'empty_book.xlsx'
+dest_filename = 'dates/empty_book.xlsx'
 
 ws1 = wb.active
 ws1.title = "range names"

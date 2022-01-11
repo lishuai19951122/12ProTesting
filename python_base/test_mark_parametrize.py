@@ -2,6 +2,29 @@ import pytest
 import sys
 import yaml
 
+from python_base.calc import Calc
+
+
+def steps():
+    with open('dates/steps.yaml') as f:
+        return yaml.safe_load(f)
+
+
+class TestCalc:
+    def setup(self):
+        self.calc = Calc()
+
+    @pytest.mark.parametrize('data1,data2,expect', yaml.safe_load(open('dates/add.yaml')))
+    def test_add(self, data1, data2, expect):
+        steps1 = steps()
+        for step in steps1:
+            if 'add' == step:
+                result = self.calc.add(data1, data2)
+                print(f'运行add方法的结果{result}')
+            elif 'add1' == step:
+                result = self.calc.add1(data1, data2)
+                print(f'运行add1方法的结果{result}')
+            assert result == expect
 
 # 用法1：参数化，前面2个变量，后面是对应的数据
 @pytest.mark.parametrize("input,expected", [('1+2', 3), ('2+5', 7), ('3+7', 9)])
@@ -11,7 +34,7 @@ def test_eval(input, expected):
 
 
 # 用法1：参数化，前面2个变量，后面是对应的数据 把数据放到yaml文件中，实现数据和pytest的分离
-@pytest.mark.parametrize("input,expected", yaml.safe_load(open('data.yaml')))
+@pytest.mark.parametrize("input,expected", yaml.safe_load(open('dates/data.yaml')))
 def test_eval_01(input, expected):
     # eval 将字符串str当成有效的表达式来值，并返回相应的结果
     assert eval(input) == expected
