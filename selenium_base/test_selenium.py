@@ -1,5 +1,4 @@
 # 基本使用
-import selenium
 from selenium import webdriver
 
 
